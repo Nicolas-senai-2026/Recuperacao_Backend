@@ -6,3 +6,10 @@
 // ☐ Não escrever manualmente as doze linhas.
 
 const entrada = require('readline-sync');
+
+const produtosPorCiclo = entrada.questionInt("Quantos produtos sao produzidos por ciclo: ");
+
+for (let ciclo = 1; ciclo <= 12; ciclo++) {
+    const producaoAcumulada = produtosPorCiclo * ciclo;
+    console.log(`Ciclo ${ciclo}: ${producaoAcumulada} produtos`)
+}
