@@ -6,3 +6,14 @@
 // ☐ Exibir uma frase informando caixas por hora, horas trabalhadas e total produzido
 
 const entrada = require('readline-sync');
+
+const caixasHora = entrada.questionInt("Quantas caixas sao produzidas por hora: ");
+
+const horasTrabalhadas = entrada.questionInt("Quantas horas trabalhadas: ");
+
+const producaoTotal = caixasHora * horasTrabalhadas;
+
+console.log("=== RESULTADO PRODUÇÃO MAQUINA DE EMBALAGEM ===");
+console.log(`Produção de caixas por hora: ${caixasHora} caixas`);
+console.log(`Horas trabalhadas: ${horasTrabalhadas} horas`);
+console.log(`Produção total: ${producaoTotal} caixas`);
