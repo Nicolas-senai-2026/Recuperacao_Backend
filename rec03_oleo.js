@@ -7,3 +7,14 @@
 // ☐ Exibir também o valor informado.
 
 const entrada = require('readline-sync');
+
+const nivelOleo = entrada.questionFloat("Qual nivel do oleo em porcentagem: ");
+
+if (nivelOleo >= 40 && nivelOleo <= 80) {
+    console.log("NIVEL NORMAL");
+} else {
+    console.log("INSPECAO NECESSARIA");
+}
+
+console.log("\n=== RESULTADO NIVEL OLEO ===");
+console.log(`Nivel do oleo: ${nivelOleo}`)
