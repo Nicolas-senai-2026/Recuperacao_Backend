@@ -8,3 +8,16 @@
 // ☐ Usar a propriedade length em pelo menos um dos laços.
 
 const entrada = require('readline-sync');
+
+const setor = [];
+
+for (let i = 1; i <= 6; i++) {
+    const nome = entrada.question("Digite o nome do setor: ");
+    setor.push(nome);
+}
+
+console.log("\n=== SETORES CADASTRADOS ===");
+
+for (let i = 0; i < setor.length; i++) {
+    console.log(`${i + 1} - ${setor[i]}`);
+}
