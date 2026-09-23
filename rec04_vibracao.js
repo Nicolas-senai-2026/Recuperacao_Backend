@@ -7,3 +7,18 @@
 // ☐ Exibir o valor informado e a classificação.
 
 const entrada = require('readline-sync');
+
+const valorVibracao = entrada.questionFloat("Valor da vibracao: ");
+
+let classificacao;
+
+if (valorVibracao <= 3) {
+    classificacao = "situacao ESTAVEL";
+} else if (valorVibracao > 3 && valorVibracao <= 6) {
+    classificacao = "situacao ATENCAO";
+} else {
+    classificacao = "situacao CRITICA";
+}
+
+console.log(`Valor da vibracao: ${valorVibracao}`);
+console.log(`Classificacao: ${classificacao}`);
