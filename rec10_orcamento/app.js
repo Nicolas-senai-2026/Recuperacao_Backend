@@ -1,5 +1,5 @@
 // ☐ Solicitar nome do cliente, valor dos materiais e horas de serviço.
-// ☐ Exibir relatório com cliente, materiais, mão de obra, total e situação do desconto.
+// ☐ Exibir relatóirio com cliente, materiais, mão de obra, total e situação do desconto.
 
 const entrada = require('readline-sync');
 const {
